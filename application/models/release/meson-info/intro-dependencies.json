@@ -1,0 +1,1 @@
+[{"name": "threads", "compile_args": [], "link_args": []}, {"name": "OpenCL", "compile_args": [], "link_args": ["/usr/lib/x86_64-linux-gnu/libOpenCL.so"]}, {"name": "zlib", "compile_args": [], "link_args": ["/usr/lib/x86_64-linux-gnu/libz.so"]}, {"name": "gtest", "compile_args": ["-I/usr/src/gtest", "-I/usr/src/gtest/include"], "link_args": []}]

@@ -1,0 +1,320 @@
+Build started at 2019-04-29T23:08:43.501428
+Main binary: /usr/bin/python3
+Python system: Linux
+The Meson build system
+Version: 0.50.1
+Source dir: /home/taoz27/lc0-0.21.1
+Build dir: /home/taoz27/lc0-0.21.1/build/release
+Build type: native build
+Project name: lc0
+Project version: undefined
+Sanity testing C++ compiler: c++
+Is cross compiler: False.
+Sanity check compiler command line: c++ /home/taoz27/lc0-0.21.1/build/release/meson-private/sanitycheckcpp.cc -o /home/taoz27/lc0-0.21.1/build/release/meson-private/sanitycheckcpp.exe
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/taoz27/lc0-0.21.1/build/release/meson-private/sanitycheckcpp.exe
+Native C++ compiler: c++ (gcc 5.4.0 "c++ (Ubuntu 5.4.0-6ubuntu1~16.04.4) 5.4.0 20160609")
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Running compile:
+Working directory:  /tmp/tmpyhcc2mdc
+Command line:  c++ /tmp/tmpyhcc2mdc/testfile.cpp -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmpyhcc2mdc/output.exe -O0 -fpermissive 
+
+Code:
+ #include<stdio.h>
+        
+        int main(int argc, char **argv) {
+            printf("%ld\n", (long)(sizeof(void *)));
+            return 0;
+        };
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Program stdout:
+
+8
+
+Program stderr:
+
+
+Running compile:
+Working directory:  /tmp/tmpq_2c2lk7
+Command line:  c++ /tmp/tmpq_2c2lk7/testfile.cpp -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpq_2c2lk7/output.obj -O0 -fpermissive --print-search-dirs 
+
+Code:
+ 
+Compiler stdout:
+ install: /usr/lib/gcc/x86_64-linux-gnu/5/
+programs: =/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../x86_64-linux-gnu/bin/
+libraries: =/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../x86_64-linux-gnu/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/5/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/5/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../x86_64-linux-gnu/lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
+
+Compiler stderr:
+ 
+Library libprotobuf found: NO
+Pkg-config binary for MachineChoice.HOST is not cached.
+Pkg-config binary missing from cross or native file, or env var undefined.
+Trying a default pkg-config fallback at pkg-config
+Trying pkg-config binary pkg-config for machine MachineChoice.HOST at ['/usr/bin/pkg-config']
+Found pkg-config: /usr/bin/pkg-config (0.29.1)
+Determining dependency 'protobuf' with pkg-config executable '/usr/bin/pkg-config'
+Called `/usr/bin/pkg-config --modversion protobuf` -> 1
+
+CMake binary for MachineChoice.HOST is not cached
+CMake binary missing from cross or native file, or env var undefined.
+Trying a default CMake fallback at cmake
+Trying CMake binary cmake for machine MachineChoice.HOST at [None]
+Did not find CMake 'cmake'
+Found CMake: NO
+No CMake binary for machine MachineChoice.HOST not found. Giving up.
+Dependency protobuf found: NO (tried pkgconfig and cmake)
+Program protoc found: NO
+
+Executing subproject protobuf 
+
+Project name: protobuf
+Project version: 3.5.1
+Native C++ compiler: c++ (gcc 5.4.0 "c++ (Ubuntu 5.4.0-6ubuntu1~16.04.4) 5.4.0 20160609")
+Running compile:
+Working directory:  /tmp/tmpe3gh_5o9
+Command line:  c++ /tmp/tmpe3gh_5o9/testfile.cpp -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpe3gh_5o9/output.obj -O0 -fpermissive -DHAVE_PTHREAD 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C++ supports arguments -DHAVE_PTHREAD: YES
+Running compile:
+Working directory:  /tmp/tmpt6btamci
+Command line:  c++ /tmp/tmpt6btamci/testfile.cpp -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpt6btamci/output.obj -O0 -fpermissive -Wno-sign-compare -Wsign-compare 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C++ supports arguments -Wno-sign-compare -Wsign-compare: YES
+Running compile:
+Working directory:  /tmp/tmpzmp6fa8t
+Command line:  c++ /tmp/tmpzmp6fa8t/testfile.cpp -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpzmp6fa8t/output.obj -O0 -fpermissive -Wno-unused-parameter -Wunused-parameter 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C++ supports arguments -Wno-unused-parameter -Wunused-parameter: YES
+Running compile:
+Working directory:  /tmp/tmpliygnjxi
+Command line:  c++ /tmp/tmpliygnjxi/testfile.cpp -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpliygnjxi/output.obj -O0 -fpermissive -Wno-ignored-qualifiers -Wignored-qualifiers 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C++ supports arguments -Wno-ignored-qualifiers -Wignored-qualifiers: YES
+Running compile:
+Working directory:  /tmp/tmpnaz78qpm
+Command line:  c++ /tmp/tmpnaz78qpm/testfile.cpp -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpnaz78qpm/output.obj -O0 -fpermissive /wd4146 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ c++: error: /wd4146: No such file or directory
+
+Compiler for C++ supports arguments /wd4146: NO
+Running compile:
+Working directory:  /tmp/tmp6c0u_dhw
+Command line:  c++ /tmp/tmp6c0u_dhw/testfile.cpp -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmp6c0u_dhw/output.obj -O0 -fpermissive /wd4244 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ c++: error: /wd4244: No such file or directory
+
+Compiler for C++ supports arguments /wd4244: NO
+Running compile:
+Working directory:  /tmp/tmp4fsqr2ie
+Command line:  c++ /tmp/tmp4fsqr2ie/testfile.cpp -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmp4fsqr2ie/output.obj -O0 -fpermissive /wd4305 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ c++: error: /wd4305: No such file or directory
+
+Compiler for C++ supports arguments /wd4305: NO
+Running compile:
+Working directory:  /tmp/tmpg79ispkc
+Command line:  c++ /tmp/tmpg79ispkc/testfile.cpp -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpg79ispkc/output.obj -O0 -fpermissive /wd4506 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ c++: error: /wd4506: No such file or directory
+
+Compiler for C++ supports arguments /wd4506: NO
+Dependency threads found: YES 
+Build targets in project: 6
+Subproject protobuf finished.
+
+Running command: /usr/bin/python /home/taoz27/lc0-0.21.1/checkdir.py libs/lczero-common/proto
+--- stdout ---
+
+--- stderr ---
+
+
+Running command: /usr/bin/git status
+--- stdout ---
+
+--- stderr ---
+fatal: Not a git repository (or any parent up to mount point /home)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+
+Message: cloning lczero-common.git into libs/lczero-common
+Running command: /usr/bin/git clone --depth=1 https://github.com/LeelaChessZero/lczero-common.git libs/lczero-common/
+--- stdout ---
+
+--- stderr ---
+正克隆到 'libs/lczero-common'...
+
+
+Running compile:
+Working directory:  /tmp/tmpjf6sck6_
+Command line:  c++ /tmp/tmpjf6sck6_/testfile.cpp -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmpjf6sck6_/output.exe -O0 -fpermissive -Wl,--start-group -lpthread -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(int argc, char **argv) { return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library pthread found: YES
+Running compile:
+Working directory:  /tmp/tmp9yi8mu13
+Command line:  c++ /tmp/tmp9yi8mu13/testfile.cpp -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmp9yi8mu13/output.exe -O0 -fpermissive -Wl,--start-group -ldl -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(int argc, char **argv) { return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library dl found: YES
+Library libtensorflow_cc found: NO
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'Accelerate' with pkg-config executable '/usr/bin/pkg-config'
+Called `/usr/bin/pkg-config --modversion Accelerate` -> 1
+
+CMake binary for MachineChoice.HOST is cached as not found
+No CMake binary for machine MachineChoice.HOST not found. Giving up.
+Dependency accelerate found: NO (tried pkgconfig and cmake)
+Library mkl_rt found: NO
+Library mklml found: NO
+Library openblas.dll found: NO
+Library openblas found: NO
+Program ispc found: NO
+Library OpenCL found: YES
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'OpenCL' with pkg-config executable '/usr/bin/pkg-config'
+Called `/usr/bin/pkg-config --modversion OpenCL` -> 0
+2.1
+Called `/usr/bin/pkg-config --cflags OpenCL` -> 0
+
+Called `/usr/bin/pkg-config OpenCL --libs` -> 0
+-L/usr/lib/x86_64-linux-gnu -lOpenCL
+Called `/usr/bin/pkg-config OpenCL --libs` -> 0
+-lOpenCL
+Dependency opencl found: YES 2.1
+Library cublas found: NO
+Library cudnn found: NO
+Library cudart found: NO
+Program nvcc found: NO
+Program /usr/local/cuda/bin/nvcc found: NO
+Program /opt/cuda/bin/nvcc found: NO
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'zlib' with pkg-config executable '/usr/bin/pkg-config'
+Called `/usr/bin/pkg-config --modversion zlib` -> 0
+1.2.8
+Called `/usr/bin/pkg-config --cflags zlib` -> 0
+
+Called `/usr/bin/pkg-config zlib --libs` -> 0
+-L/usr/lib/x86_64-linux-gnu -lz
+Called `/usr/bin/pkg-config zlib --libs` -> 0
+-lz
+Dependency zlib found: YES 1.2.8
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'gtest' with pkg-config executable '/usr/bin/pkg-config'
+Called `/usr/bin/pkg-config --modversion gtest` -> 1
+
+Running compile:
+Working directory:  /tmp/tmppk2cezwr
+Command line:  c++ /tmp/tmppk2cezwr/testfile.cpp -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmppk2cezwr/output.exe -O0 -fpermissive -Wl,--start-group -lgtest -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(int argc, char **argv) { return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ /usr/bin/ld: cannot find -lgtest
+collect2: error: ld returned 1 exit status
+
+Running compile:
+Working directory:  /tmp/tmp_3ertg0a
+Command line:  c++ /tmp/tmp_3ertg0a/testfile.cpp -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmp_3ertg0a/output.exe -O0 -fpermissive -Wl,--start-group -lgtest_main -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(int argc, char **argv) { return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ /usr/bin/ld: cannot find -lgtest_main
+collect2: error: ld returned 1 exit status
+
+Dependency GTest found: YES (building self)
+Adding test "ChessBoard"
+Adding test "HashCat"
+Adding test "PositionTest"
+Adding test "OptionsParserTest"
+Adding test "SyzygyTest"
+Adding test "EncodePositionForNN"
+Build targets in project: 14
+Found ninja-1.5.1 at /usr/bin/ninja
+Running compile:
+Working directory:  /tmp/tmp1wfj1ltj
+Command line:  c++ /tmp/tmp1wfj1ltj/testfile.cpp -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmp1wfj1ltj/output.obj -std=c++14 
+
+Code:
+ int i = static_cast<int>(0);
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler accepts -std=c++14: YES
